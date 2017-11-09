@@ -1,0 +1,14 @@
+dsn -> database source name
+
+Fetching results using pdo
+----------------------------------------------------------------------
+  fetch() ->fetches the next row as an associative array/indexed array
+  fetchAll() ->fetches the whole table as a multidimensional array
+  fetchColumn ->fetches a single column in the next row
+  fetchObject ->fetches the next row as an object
+
+
+
+  magic tostring method is used to update class properties automatically by picking the data from the database
+  You have to select the pdo fetch mode into the class instantiation
+  ie $stmt->setFetchMode(PDO::FETCH_INTO, $car);
